@@ -18,7 +18,7 @@ const ProjectsManager = () => {
     setIsCreating(false);
   };
   const handleDelete = (id) => {
-    if (window.confirm('Tens a certeza que queres eliminar este projeto?')) {
+    if (window.confirm('Are you sure you want to delete this project?')) {
       deleteProject(id);
     }
   };
@@ -34,17 +34,17 @@ const ProjectsManager = () => {
   return (
     <div className="projects-manager">
       <div className="manager-header">
-        <h2>Gerir Projetos</h2>
+        <h2>Manage projects</h2>
         <button className="btn btn-primary" onClick={handleCreate}>
-          + Novo Projeto
+          + New Project
         </button>
       </div>
       <div className="projects-list">
         {data.projects.length === 0 ? (
           <div className="empty-state">
-            <p>Ainda não tens projetos.</p>
+            <p>You still don't have projects.</p>
             <button className="btn btn-primary" onClick={handleCreate}>
-              Criar Primeiro Projeto
+              Create first project
             </button>
           </div>
         ) : (
@@ -66,14 +66,14 @@ const ProjectsManager = () => {
                 <button 
                   className="btn-icon"
                   onClick={() => handleEdit(project)}
-                  title="Editar"
+                  title="Edit"
                 >
                   ✏️
                 </button>
                 <button 
                   className="btn-icon delete"
                   onClick={() => handleDelete(project.id)}
-                  title="Eliminar"
+                  title="Delete"
                 >
                   🗑️
                 </button>

@@ -18,9 +18,9 @@ const Header = ({ profile }) => {
           <span></span>
         </button>
         <nav className={`nav ${menuOpen ? 'open' : ''}`}>
-          <a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre</a>
-          <a href="#projetos" onClick={() => setMenuOpen(false)}>Projetos</a>
-          <a href="#contacto" onClick={() => setMenuOpen(false)}>Contacto</a>
+          <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+          <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Contacts</a>
         </nav>
       </div>
     </header>

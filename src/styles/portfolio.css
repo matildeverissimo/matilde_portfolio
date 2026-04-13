@@ -83,11 +83,11 @@
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
   }
   .profile-greeting {
-    display: block;
-    font-size: 1rem;
-    color: var(--color-primary);
-    font-weight: 500;
-    margin-bottom: var(--space-xs);
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-text);
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
   }
   .profile-name {
     font-size: 3rem;

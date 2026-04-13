@@ -1,11 +1,11 @@
 export const defaultData = {
     profile: {
-      name: "O Teu Nome",
+      name: "Your Name",
       title: "UX/UI Designer",
-      bio: "Escreve aqui uma breve descrição sobre ti, a tua experiência e o que te apaixona no design.",
-      email: "email@exemplo.com",
+      bio: "Write here a brief description about yourself, your experience, and what you are passionate about in design.",
+      email: "email@example.com",
       phone: "+351 900 000 000",
-      location: "Lisboa, Portugal",
+      location: "Lisbon, Portugal",
       avatar: "",
       social: {
         linkedin: "",
@@ -18,26 +18,26 @@ export const defaultData = {
     projects: [
       {
         id: "1",
-        title: "Projeto Exemplo 1",
+        title: "Example Project 1",
         category: "Mobile App",
-        description: "Breve descrição do projeto e do teu papel no mesmo.",
-        fullDescription: "Descrição completa do projeto, incluindo o problema, a solução e os resultados alcançados.",
+        description: "Brief description of the project and your role in it.",
+        fullDescription: "Full description of the project, including the problem, the solution, and the results achieved.",
         image: "",
         tags: ["UX Research", "UI Design", "Prototyping"],
         year: "2024",
-        client: "Cliente Exemplo",
+        client: "Example Client",
         link: ""
       },
       {
         id: "2",
-        title: "Projeto Exemplo 2",
+        title: "Example Project 2",
         category: "Web Design",
-        description: "Breve descrição do projeto e do teu papel no mesmo.",
-        fullDescription: "Descrição completa do projeto, incluindo o problema, a solução e os resultados alcançados.",
+        description: "Brief description of the project and your role in it.",
+        fullDescription: "Full description of the project, including the problem, the solution, and the results achieved.",
         image: "",
         tags: ["Web Design", "Design System"],
         year: "2024",
-        client: "Cliente Exemplo",
+        client: "Example Client",
         link: ""
       }
     ]

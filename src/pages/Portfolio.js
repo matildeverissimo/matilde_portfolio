@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import Header from '../components/Header';
 import ProfileSection from '../components/ProfileSection';
@@ -16,11 +15,11 @@ const Portfolio = () => {
       <main className="main-content">
         <ProfileSection profile={profile} />
         
-        <section className="projects-section" id="projetos">
+        <section className="projects-section" id="projects">
           <div className="container">
-            <h2 className="section-title">Projetos</h2>
+            <h2 className="section-title">Projects</h2>
             <p className="section-subtitle">
-              Uma seleção dos meus trabalhos mais recentes
+              My recent work
             </p>
             
             <div className="projects-grid">
@@ -30,11 +29,11 @@ const Portfolio = () => {
             </div>
           </div>
         </section>
-        <section className="contact-section" id="contacto">
+        <section className="contact-section" id="contact">
           <div className="container">
-            <h2 className="section-title">Vamos Conversar</h2>
+            <h2 className="section-title">Let's talk!</h2>
             <p className="section-subtitle">
-              Tens um projeto em mente? Entra em contacto.
+              
             </p>
             
             <div className="contact-info">
@@ -59,16 +58,6 @@ const Portfolio = () => {
               {profile.social.linkedin && (
                 <a href={profile.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-link">
                   LinkedIn
-                </a>
-              )}
-              {profile.social.behance && (
-                <a href={profile.social.behance} target="_blank" rel="noopener noreferrer" className="social-link">
-                  Behance
-                </a>
-              )}
-              {profile.social.dribbble && (
-                <a href={profile.social.dribbble} target="_blank" rel="noopener noreferrer" className="social-link">
-                  Dribbble
                 </a>
               )}
             </div>

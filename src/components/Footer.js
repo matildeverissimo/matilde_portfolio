@@ -5,7 +5,7 @@ const Footer = ({ profile }) => {
   return (
     <footer className="footer">
       <div className="container">
-        <p>© {year} {profile.name}. Todos os direitos reservados.</p>
+        <p>© {year} {profile.name}. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -34,26 +34,26 @@ const ProfileEditor = () => {
   return (
     <div className="editor">
       <div className="editor-header">
-        <h2>Editar Perfil</h2>
-        {saved && <span className="save-indicator">✓ Guardado</span>}
+        <h2>Edit Profile</h2>
+        {saved && <span className="save-indicator">✓ Saved</span>}
       </div>
       <form onSubmit={handleSubmit} className="editor-form">
         <div className="form-section">
-          <h3>Informação Básica</h3>
+          <h3>Basic information</h3>
           
           <div className="form-group">
-            <label htmlFor="name">Nome</label>
+            <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
               name="name"
               value={profile.name}
               onChange={handleChange}
-              placeholder="O teu nome completo"
+              placeholder="Full name"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="title">Título Profissional</label>
+            <label htmlFor="title">Professional title</label>
             <input
               type="text"
               id="title"
@@ -64,18 +64,18 @@ const ProfileEditor = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="bio">Biografia</label>
+            <label htmlFor="bio">Bio</label>
             <textarea
               id="bio"
               name="bio"
               value={profile.bio}
               onChange={handleChange}
               rows="4"
-              placeholder="Fala um pouco sobre ti..."
+              placeholder="Tell me about you..."
             />
           </div>
           <div className="form-group">
-            <label htmlFor="avatar">URL do Avatar</label>
+            <label htmlFor="avatar">Avatar url</label>
             <input
               type="url"
               id="avatar"
@@ -87,7 +87,7 @@ const ProfileEditor = () => {
           </div>
         </div>
         <div className="form-section">
-          <h3>Contacto</h3>
+          <h3>Contacts</h3>
           
           <div className="form-row">
             <div className="form-group">
@@ -101,7 +101,7 @@ const ProfileEditor = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="phone">Telefone</label>
+              <label htmlFor="phone">Phone number</label>
               <input
                 type="tel"
                 id="phone"
@@ -112,14 +112,14 @@ const ProfileEditor = () => {
             </div>
           </div>
           <div className="form-group">
-            <label htmlFor="location">Localização</label>
+            <label htmlFor="location">Location</label>
             <input
               type="text"
               id="location"
               name="location"
               value={profile.location}
               onChange={handleChange}
-              placeholder="Cidade, País"
+              placeholder="City, Country"
             />
           </div>
         </div>
@@ -137,34 +137,12 @@ const ProfileEditor = () => {
               placeholder="[linkedin.com](https://linkedin.com/in/)"
             />
           </div>
-          <div className="form-group">
-            <label htmlFor="behance">Behance</label>
-            <input
-              type="url"
-              id="behance"
-              name="behance"
-              value={profile.social.behance}
-              onChange={handleSocialChange}
-              placeholder="[behance.net](https://behance.net/)"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="dribbble">Dribbble</label>
-            <input
-              type="url"
-              id="dribbble"
-              name="dribbble"
-              value={profile.social.dribbble}
-              onChange={handleSocialChange}
-              placeholder="[dribbble.com](https://dribbble.com/)"
-            />
-          </div>
         </div>
         <div className="form-section">
-          <h3>Competências</h3>
+          <h3>Skills</h3>
           
           <div className="form-group">
-            <label htmlFor="skills">Skills (separadas por vírgula)</label>
+            <label htmlFor="skills">Skills (separated by comma)</label>
             <input
               type="text"
               id="skills"
@@ -176,7 +154,7 @@ const ProfileEditor = () => {
         </div>
         <div className="form-actions">
           <button type="submit" className="btn btn-primary">
-            Guardar Alterações
+            Save changes
           </button>
         </div>
       </form>

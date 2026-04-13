@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
           </div>
         )}
         <div className="project-overlay">
-          <span className="view-project">Ver Projeto →</span>
+          <span className="view-project">See project →</span>
         </div>
       </div>
       

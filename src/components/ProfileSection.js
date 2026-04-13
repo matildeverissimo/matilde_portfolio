@@ -1,7 +1,7 @@
 import React from 'react';
 const ProfileSection = ({ profile }) => {
   return (
-    <section className="profile-section" id="sobre">
+    <section className="profile-section" id="about">
       <div className="container">
         <div className="profile-content">
           <div className="profile-avatar">
@@ -15,8 +15,8 @@ const ProfileSection = ({ profile }) => {
           </div>
           
           <div className="profile-info">
-            <span className="profile-greeting">Olá, eu sou</span>
-            <h1 className="profile-name">{profile.name}</h1>
+            <span className="profile-greeting">Hey, you.</span>
+            <h1 className="profile-name">I'm {profile.name}</h1>
             <h2 className="profile-title">{profile.title}</h2>
             <p className="profile-bio">{profile.bio}</p>
             
@@ -26,8 +26,8 @@ const ProfileSection = ({ profile }) => {
               ))}
             </div>
             <div className="profile-actions">
-              <a href="#projetos" className="btn btn-primary">Ver Projetos</a>
-              <a href="#contacto" className="btn btn-secondary">Contactar</a>
+              <a href="#projects" className="btn btn-primary">See projects</a>
+              <a href="#contact" className="btn btn-secondary">Contact me!</a>
             </div>
           </div>
         </div>

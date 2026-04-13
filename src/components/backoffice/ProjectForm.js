@@ -42,16 +42,16 @@ const ProjectForm = ({ project, onClose, isNew }) => {
   return (
     <div className="editor">
       <div className="editor-header">
-        <button className="back-btn" onClick={onClose}>← Voltar</button>
-        <h2>{isNew ? 'Novo Projeto' : 'Editar Projeto'}</h2>
-        {saved && <span className="save-indicator">✓ Guardado</span>}
+        <button className="back-btn" onClick={onClose}>← Back</button>
+        <h2>{isNew ? 'New Project' : 'Edit Project'}</h2>
+        {saved && <span className="save-indicator">✓ Saved</span>}
       </div>
       <form onSubmit={handleSubmit} className="editor-form">
         <div className="form-section">
-          <h3>Informação do Projeto</h3>
+          <h3>Project Information</h3>
           
           <div className="form-group">
-            <label htmlFor="title">Título *</label>
+            <label htmlFor="title">Title *</label>
             <input
               type="text"
               id="title"
@@ -59,12 +59,12 @@ const ProjectForm = ({ project, onClose, isNew }) => {
               value={formData.title}
               onChange={handleChange}
               required
-              placeholder="Nome do projeto"
+              placeholder="Project name"
             />
           </div>
           <div className="form-row">
             <div className="form-group">
-              <label htmlFor="category">Categoria *</label>
+              <label htmlFor="category">Category *</label>
               <input
                 type="text"
                 id="category"
@@ -76,7 +76,7 @@ const ProjectForm = ({ project, onClose, isNew }) => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="year">Ano</label>
+              <label htmlFor="year">Year</label>
               <input
                 type="text"
                 id="year"
@@ -88,18 +88,18 @@ const ProjectForm = ({ project, onClose, isNew }) => {
             </div>
           </div>
           <div className="form-group">
-            <label htmlFor="client">Cliente</label>
+            <label htmlFor="client">Client</label>
             <input
               type="text"
               id="client"
               name="client"
               value={formData.client}
               onChange={handleChange}
-              placeholder="Nome do cliente"
+              placeholder="Client name"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="description">Descrição Curta *</label>
+            <label htmlFor="description">Short description *</label>
             <textarea
               id="description"
               name="description"
@@ -107,26 +107,26 @@ const ProjectForm = ({ project, onClose, isNew }) => {
               onChange={handleChange}
               required
               rows="2"
-              placeholder="Breve descrição para o card..."
+              placeholder="Bried description for the project card..."
             />
           </div>
           <div className="form-group">
-            <label htmlFor="fullDescription">Descrição Completa</label>
+            <label htmlFor="fullDescription">Full description</label>
             <textarea
               id="fullDescription"
               name="fullDescription"
               value={formData.fullDescription}
               onChange={handleChange}
               rows="5"
-              placeholder="Descrição detalhada do projeto..."
+              placeholder="Deatiled description of the project..."
             />
           </div>
         </div>
         <div className="form-section">
-          <h3>Media e Links</h3>
+          <h3>Media and Links</h3>
           
           <div className="form-group">
-            <label htmlFor="image">URL da Imagem</label>
+            <label htmlFor="image">Image URL</label>
             <input
               type="url"
               id="image"
@@ -142,7 +142,7 @@ const ProjectForm = ({ project, onClose, isNew }) => {
             )}
           </div>
           <div className="form-group">
-            <label htmlFor="link">Link do Projeto</label>
+            <label htmlFor="link">Project link</label>
             <input
               type="url"
               id="link"
@@ -157,7 +157,7 @@ const ProjectForm = ({ project, onClose, isNew }) => {
           <h3>Tags</h3>
           
           <div className="form-group">
-            <label htmlFor="tags">Tags (separadas por vírgula)</label>
+            <label htmlFor="tags">Tags (separated by comma)</label>
             <input
               type="text"
               id="tags"
@@ -169,10 +169,10 @@ const ProjectForm = ({ project, onClose, isNew }) => {
         </div>
         <div className="form-actions">
           <button type="button" className="btn btn-secondary" onClick={onClose}>
-            Cancelar
+            Cancel
           </button>
           <button type="submit" className="btn btn-primary">
-            {isNew ? 'Criar Projeto' : 'Guardar Alterações'}
+            {isNew ? 'Create project' : 'Save changes'}
           </button>
         </div>
       </form>

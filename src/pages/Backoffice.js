@@ -12,32 +12,32 @@ const Backoffice = () => {
       <aside className="backoffice-sidebar">
         <div className="sidebar-header">
           <h1>Backoffice</h1>
-          <Link to="/" className="preview-link">Ver Site →</Link>
+          <Link to="/" className="preview-link">See website →</Link>
         </div>
         <nav className="sidebar-nav">
           <button 
             className={`nav-item ${activeTab === 'profile' ? 'active' : ''}`}
             onClick={() => setActiveTab('profile')}
           >
-            👤 Perfil
+            👤 Profile
           </button>
           <button 
             className={`nav-item ${activeTab === 'projects' ? 'active' : ''}`}
             onClick={() => setActiveTab('projects')}
           >
-            📁 Projetos
+            📁 Projects
           </button>
         </nav>
         <div className="sidebar-footer">
           <button 
             className="reset-btn"
             onClick={() => {
-              if (window.confirm('Tens a certeza? Isto irá repor todos os dados.')) {
+              if (window.confirm('Are you sure? This will reset all data.')) {
                 resetData();
               }
             }}
           >
-            🔄 Repor Dados
+            🔄 Reset data
           </button>
         </div>
       </aside>

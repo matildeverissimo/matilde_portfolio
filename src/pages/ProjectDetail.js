@@ -13,7 +13,7 @@ const ProjectDetail = () => {
     <div className="project-detail">
       <header className="detail-header">
         <div className="container">
-          <Link to="/" className="back-link">← Voltar</Link>
+          <Link to="/" className="back-link">← Back</Link>
         </div>
       </header>
       <main className="detail-content">
@@ -23,8 +23,8 @@ const ProjectDetail = () => {
             <h1 className="detail-title">{project.title}</h1>
             
             <div className="detail-meta">
-              {project.year && <span>Ano: {project.year}</span>}
-              {project.client && <span>Cliente: {project.client}</span>}
+              {project.year && <span>Year: {project.year}</span>}
+              {project.client && <span>Client: {project.client}</span>}
             </div>
           </div>
           <div className="detail-image">
@@ -33,18 +33,18 @@ const ProjectDetail = () => {
             ) : (
               <div className="image-placeholder large">
                 <span>🎨</span>
-                <p>Imagem do Projeto</p>
+                <p>Project image</p>
               </div>
             )}
           </div>
           <div className="detail-body">
             <div className="detail-description">
-              <h2>Sobre o Projeto</h2>
+              <h2>About the project</h2>
               <p>{project.fullDescription || project.description}</p>
             </div>
             <aside className="detail-sidebar">
               <div className="sidebar-section">
-                <h3>Competências</h3>
+                <h3>Skills</h3>
                 <div className="detail-tags">
                   {project.tags.map((tag, index) => (
                     <span key={index} className="tag">{tag}</span>
@@ -53,14 +53,14 @@ const ProjectDetail = () => {
               </div>
               {project.link && (
                 <div className="sidebar-section">
-                  <h3>Link do Projeto</h3>
+                  <h3>Project link</h3>
                   <a 
                     href={project.link} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="project-link"
                   >
-                    Ver Live →
+                    See live →
                   </a>
                 </div>
               )}
@@ -70,7 +70,7 @@ const ProjectDetail = () => {
       </main>
       <footer className="detail-footer">
         <div className="container">
-          <Link to="/" className="btn btn-primary">Ver Mais Projetos</Link>
+          <Link to="/" className="btn btn-primary">See more projects</Link>
         </div>
       </footer>
     </div>
