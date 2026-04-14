@@ -7,7 +7,6 @@
     z-index: 100;
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--color-border);
   }
   .header-content {
     display: flex;
@@ -137,7 +136,6 @@
     background-color: var(--color-bg);
     border-radius: var(--radius-lg);
     overflow: hidden;
-    border: 1px solid var(--color-border);
     transition: all var(--transition-base);
   }
   .project-card:hover {
@@ -273,7 +271,6 @@
   .footer {
     padding: var(--space-xl) 0;
     text-align: center;
-    border-top: 1px solid var(--color-border);
   }
   .footer p {
     font-size: 0.875rem;

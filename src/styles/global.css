@@ -4,23 +4,27 @@
     box-sizing: border-box;
   }
   :root {
-    /* Colors */
-    --color-primary: #2563eb;
-    --color-primary-dark: #1d4ed8;
-    --color-secondary: #64748b;
-    --color-accent: #8b5cf6;
-    
-    --color-text: #1e293b;
-    --color-text-light: #64748b;
-    --color-text-lighter: #94a3b8;
-    
-    --color-bg: #ffffff;
-    --color-bg-alt: #f8fafc;
-    --color-bg-dark: #1e293b;
-    
-    --color-border: #e2e8f0;
-    --color-border-dark: #cbd5e1;
-    
+    /* 🌊 Primary (calm but readable blue) */
+    --color-primary: #5f8fa3;        /* was strong blue → now softened */
+    --color-primary-dark: #3e6f82;   /* stays darker */
+    --color-secondary: #7b8f99;      /* still medium tone */
+    --color-accent: #c7dce5;         /* was purple → now very light blue */
+
+    /* 📝 Text (kept dark for readability) */
+    --color-text: #2a3439;
+    --color-text-light: #6f8087;
+    --color-text-lighter: #9aa8ae;
+
+    /* 🤍 Backgrounds (ivory-based) */
+    --color-bg: #f8f6f2;             /* main ivory */
+    --color-bg-alt: #fdfcf9;         /* lighter ivory (same “light” logic) */
+    --color-bg-dark: #2a3439;        /* still dark */
+
+    /* 📏 Borders (very subtle, still light) */
+    --color-border: #e8e3dc;
+    --color-border-dark: #d4cdc4;
+
+    /* ✅ Feedback */
     --color-success: #10b981;
     --color-error: #ef4444;
     
@@ -113,7 +117,6 @@
   .btn-secondary {
     background-color: var(--color-bg-alt);
     color: var(--color-text);
-    border: 1px solid var(--color-border);
   }
   .btn-secondary:hover {
     background-color: var(--color-border);
